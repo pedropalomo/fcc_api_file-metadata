@@ -29,7 +29,7 @@ app.post('/api/photo',function(req,res){
     });
 });
 
-app.listen(8080,function(){
+app.listen(process.env.PORT || 8080,function(){
     console.log("Working on port", process.env.PORT || 8080);
 });
 
